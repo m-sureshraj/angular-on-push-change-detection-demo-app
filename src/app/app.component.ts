@@ -6,5 +6,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  list = [
+    { name: 'Bar' },
+    { name: 'Foo' },
+  ];
+
+  fakeData = {
+    name: 'Suresh',
+    job: 'Dev',
+    city: 'Deniyaya'
+  };
 }

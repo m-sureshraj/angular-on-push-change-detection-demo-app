@@ -1,0 +1,13 @@
+<div style="border: 2px solid #777; padding: 10px">
+  <input type="text" #nameInput placeholder="Type your name">
+
+  <button (click)="addName(nameInput.value)">Add</button>
+
+  <ul>
+    <li *ngFor="let todo of initialData; let i = index" style="border: 1px solid #ccc; padding: 5px; margin-bottom: 5px">
+      <app-todo [name]="todo.name" [index]="i"></app-todo>
+    </li>
+  </ul>
+
+  {{ log() }}
+</div>
